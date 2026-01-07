@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | SeezuHeartPixel - Our Website Projects</title>
+    <meta name="description"
+        content="View our portfolio of emotional and business websites. See examples of our work for birthdays, anniversaries, and business projects.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="#" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-heart logo-icon"></i>
+                    <div>
+                        <div class="logo-text">SeezuHeartPixel</div>
+                        <div class="logo-tagline">Emotion + Technology</div>
+                    </div>
+                </a>
+
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our Story</a>
+                    <a href="services.html">Services</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="portfolio.html" class="active">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-cta">
+                    <a href="#" class="btn btn-whatsapp btn-small">
+                        <i class="fab fa-whatsapp"></i> Discuss Project
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <main>
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1>Our Work Speaks from the Heart</h1>
+                <p class="hero-tagline">Browse through our portfolio of emotional celebrations and professional business
+                    websites.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="section">
+            <div class="container">
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="emotional">Emotional Websites</button>
+                    <button class="filter-btn" data-filter="business">Business Websites</button>
+                    <button class="filter-btn" data-filter="birthday">Birthday Sites</button>
+                    <button class="filter-btn" data-filter="anniversary">Anniversary Sites</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1 - Birthday -->
+                    <div class="portfolio-item" data-category="emotional birthday">
+                        <div class="portfolio-image"
+                            style="background: linear-gradient(135deg, #FFE8EC 0%, #FFF5F7 100%);">
+                            <i class="fas fa-birthday-cake" style="color: var(--red-emotion); font-size: 4rem;"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span class="tag tag-emotional">Emotional</span>
+                                <span class="tag tag-emotional">Birthday</span>
+                            </div>
+                            <h3>Surprise 30th Birthday</h3>
+                            <p>A beautiful website created for a surprise 30th birthday celebration, featuring photo
+                                timelines, video messages from friends worldwide, and an interactive guestbook.</p>
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <button class="btn btn-emotion btn-small" data-plan="Birthday Website Like This"
+                                    data-price="Starting from ₹4,999">
+                                    <i class="fab fa-whatsapp"></i> Create Similar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - Business -->
+                    <div class="portfolio-item" data-category="business">
+                        <div class="portfolio-image"
+                            style="background: linear-gradient(135deg, #f0f2ff 0%, #f5f7ff 100%);">
+                            <i class="fas fa-briefcase" style="color: var(--blue-primary); font-size: 4rem;"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span class="tag tag-business">Business</span>
+                                <span class="tag tag-business">Service</span>
+                            </div>
+                            <h3>Digital Marketing Agency</h3>
+                            <p>A professional website for a digital marketing agency with service pages, case studies,
+                                lead generation forms, and integrated analytics for tracking conversions.</p>
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <button class="btn btn-primary btn-small" data-plan="Business Website Like This"
+                                    data-price="Starting from ₹14,999">
+                                    <i class="fab fa-whatsapp"></i> Create Similar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 - Anniversary -->
+                    <div class="portfolio-item" data-category="emotional anniversary">
+                        <div class="portfolio-image"
+                            style="background: linear-gradient(135deg, #FFE8EC 0%, #FFF5F7 100%);">
+                            <i class="fas fa-ring" style="color: var(--red-emotion); font-size: 4rem;"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span class="tag tag-emotional">Emotional</span>
+                                <span class="tag tag-emotional">Anniversary</span>
+                            </div>
+                            <h3>25th Wedding Anniversary</h3>
+                            <p>A touching website celebrating 25 years of marriage, featuring wedding photos, growth of
+                                the family, messages from children, and a timeline of their journey together.</p>
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <button class="btn btn-emotion btn-small" data-plan="Anniversary Website Like This"
+                                    data-price="Starting from ₹4,999">
+                                    <i class="fab fa-whatsapp"></i> Create Similar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 - E-commerce -->
+                    <div class="portfolio-item" data-category="business">
+                        <div class="portfolio-image"
+                            style="background: linear-gradient(135deg, #f0f2ff 0%, #f5f7ff 100%);">
+                            <i class="fas fa-shopping-cart" style="color: var(--blue-primary); font-size: 4rem;"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span class="tag tag-business">Business</span>
+                                <span class="tag tag-business">E-commerce</span>
+                            </div>
+                            <h3>Handmade Jewelry Store</h3>
+                            <p>An e-commerce website for handmade jewelry with product catalog, secure checkout,
+                                customer reviews, and integration with shipping providers for a seamless shopping
+                                experience.</p>
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <button class="btn btn-primary btn-small" data-plan="E-commerce Website Like This"
+                                    data-price="Starting from ₹24,999">
+                                    <i class="fab fa-whatsapp"></i> Create Similar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 - Surprise -->
+                    <div class="portfolio-item" data-category="emotional">
+                        <div class="portfolio-image"
+                            style="background: linear-gradient(135deg, #FFE8EC 0%, #FFF5F7 100%);">
+                            <i class="fas fa-gift" style="color: var(--red-emotion); font-size: 4rem;"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span class="tag tag-emotional">Emotional</span>
+                                <span class="tag tag-emotional">Surprise</span>
+                            </div>
+                            <h3>Graduation Surprise</h3>
+                            <p>A surprise website for a medical student's graduation, featuring countdown timer,
+                                messages from mentors, journey timeline, and a virtual celebration page for distant
+                                relatives.</p>
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <button class="btn btn-emotion btn-small" data-plan="Surprise Website Like This"
+                                    data-price="Starting from ₹4,999">
+                                    <i class="fab fa-whatsapp"></i> Create Similar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 - Consultant -->
+                    <div class="portfolio-item" data-category="business">
+                        <div class="portfolio-image"
+                            style="background: linear-gradient(135deg, #f0f2ff 0%, #f5f7ff 100%);">
+                            <i class="fas fa-user-tie" style="color: var(--blue-primary); font-size: 4rem;"></i>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-tags">
+                                <span class="tag tag-business">Business</span>
+                                <span class="tag tag-business">Consultant</span>
+                            </div>
+                            <h3>Financial Consultant Portfolio</h3>
+                            <p>A professional portfolio website for a financial consultant with service details, client
+                                testimonials, blog section, and appointment booking system integration.</p>
+                            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                                <button class="btn btn-primary btn-small" data-plan="Consultant Website Like This"
+                                    data-price="Starting from ₹14,999">
+                                    <i class="fab fa-whatsapp"></i> Create Similar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonials -->
+        <section class="section" style="background: linear-gradient(135deg, #f5f7ff 0%, #f0f2ff 100%);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Clients Say</h2>
+                    <p>Real feedback from people who trusted us with their special moments and business growth.</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The birthday website you created for my wife brought tears to her eyes. It was the perfect
+                            surprise that our family will cherish forever."</p>
+                        <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--red-emotion); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                R
+                            </div>
+                            <div>
+                                <strong>Rajesh Kumar</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-medium);">Birthday Website Client</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Our business website has generated 3x more leads than our old one. The team understood
+                            exactly what we needed and delivered beyond expectations."</p>
+                        <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                P
+                            </div>
+                            <div>
+                                <strong>Priya Sharma</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-medium);">Business Owner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The anniversary website captured 25 years of our marriage beautifully. Our children loved
+                            adding their messages. Thank you for this precious gift."</p>
+                        <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--red-emotion); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                                A
+                            </div>
+                            <div>
+                                <strong>Anjali & Sanjay</strong>
+                                <div style="font-size: 0.9rem; color: var(--gray-medium);">Anniversary Website Clients
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Ready for Your Website?</h2>
+                    <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem;">
+                        Whether you want to celebrate a special moment or grow your business online, we're here to
+                        create something amazing for you.
+                    </p>
+                    <a href="contact.html" class="btn btn-whatsapp" style="padding: 16px 40px; font-size: 1.1rem;">
+                        <i class="fab fa-whatsapp"></i> Start Your Project
+                    </a>
+                    <p style="margin-top: 20px; color: var(--gray-medium);">
+                        <i class="fas fa-phone"></i> Call: <a href="tel:+917723832790"
+                            style="color: var(--blue-primary);">+91 7723832790</a> |
+                        <i class="fas fa-envelope"></i> Email: <a href="mailto:masumsingh750@gmail.com"
+                            style="color: var(--blue-primary);">masumsingh750@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart logo-icon"></i>
+                        <span>SeezuHeartPixel</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Emotion + Technology. Creating websites that feel human, memorable, and professional.
+                    </p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="tel:+917723832790" class="btn btn-outline btn-small"
+                            style="color: white; border-color: rgba(255,255,255,0.3);">
+                            <i class="fas fa-phone"></i> Call
+                        </a>
+                        <a href="#" class="btn btn-whatsapp btn-small">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-heart"></i> Our Story</a></li>
+                        <li><a href="services.html"><i class="fas fa-code"></i> Services</a></li>
+                        <li><a href="pricing.html"><i class="fas fa-tag"></i> Pricing</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="special/birthday.html"><i class="fas fa-birthday-cake"></i> Birthday Websites</a>
+                        </li>
+                        <li><a href="special/anniversary.html"><i class="fas fa-ring"></i> Anniversary Websites</a></li>
+                        <li><a href="special/surprise.html"><i class="fas fa-gift"></i> Surprise Websites</a></li>
+                        <li><a href="services.html#business"><i class="fas fa-briefcase"></i> Business Websites</a></li>
+                        <li><a href="services.html#maintenance"><i class="fas fa-tools"></i> Website Maintenance</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; <span id="current-year">2023</span> SeezuHeartPixel. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,363 +1,1075 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | SeezuHeartPixel - Emotional & Business Websites</title>
-    <meta name="description"
-        content="Explore our range of web services - from emotional websites for special moments to professional business websites for growth.">
+
+    <title>Our Services | SeezuHeartPixel - Emotion + Technology</title>
+
+    <meta name="description" content="Explore our full range of services - websites, video editing, graphic design, AI tools, and more.">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
-</head>
 
-<body>
-    <!-- WhatsApp Float Button -->
-    <a href="#" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="nav-container">
-                <a href="index.html" class="logo">
-                    <i class="fas fa-heart logo-icon"></i>
-                    <div>
-                        <div class="logo-text">SeezuHeartPixel</div>
-                        <div class="logo-tagline">Emotion + Technology</div>
-                    </div>
-                </a>
+    <style>
 
-                <div class="mobile-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        :root {
 
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">Our Story</a>
-                    <a href="services.html" class="active">Services</a>
-                    <a href="pricing.html">Pricing</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+            --pink: #e91e8c;
 
-                <div class="nav-cta">
-                    <a href="#" class="btn btn-whatsapp btn-small">
-                        <i class="fab fa-whatsapp"></i> Get Quote
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
+            --pink-light: #ff6bb5;
 
-    <!-- Services Hero -->
-    <main>
-        <section class="services-hero">
-            <div class="container">
-                <h1>Services That Connect & Convert</h1>
-                <p class="hero-tagline">From heartfelt celebrations to business growth, we create websites that serve
-                    your purpose with emotion and excellence.</p>
-            </div>
-        </section>
+            --pink-soft: #fff0f7;
 
-        <!-- Service Categories -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Our Two Worlds of Websites</h2>
-                    <p>We specialize in creating two distinct types of websites, each with its own purpose and emotional
-                        resonance.</p>
-                </div>
+            --blue: #2563eb;
 
-                <div class="service-categories">
-                    <!-- Emotional Websites -->
-                    <div class="category category-emotional" id="emotional">
-                        <i class="fas fa-heart category-icon"></i>
-                        <h3>Emotional Websites</h3>
-                        <p>Digital celebrations for life's most precious moments. These websites capture emotions, tell
-                            stories, and create lasting memories.</p>
+            --blue-light: #60a5fa;
 
-                        <div style="margin: 25px 0;">
-                            <h4>Perfect For:</h4>
-                            <ul class="features-list features-list-emotional">
-                                <li>Birthdays & Anniversaries</li>
-                                <li>Wedding Proposals</li>
-                                <li>Memory Tributes</li>
-                                <li>Surprise Events</li>
-                                <li>Graduation Celebrations</li>
-                            </ul>
-                        </div>
+            --blue-soft: #eff6ff;
 
-                        <div style="margin: 25px 0;">
-                            <h4>What's Included:</h4>
-                            <ul class="features-list features-list-emotional">
-                                <li>Personalized theme & story</li>
-                                <li>Photo & video galleries</li>
-                                <li>Interactive guestbook</li>
-                                <li>Custom animations</li>
-                                <li>Mobile-optimized design</li>
-                                <li>1-year free hosting</li>
-                            </ul>
-                        </div>
+            --dark: #1a1a2e;
 
-                        <div class="hero-cta" style="margin-top: 30px;">
-                            <a href="special/birthday.html" class="btn btn-emotion">
-                                <i class="fas fa-birthday-cake"></i> Birthday Sites
-                            </a>
-                            <a href="special/anniversary.html" class="btn btn-emotion">
-                                <i class="fas fa-ring"></i> Anniversary Sites
-                            </a>
-                        </div>
-                    </div>
+            --gray: #6b7280;
 
-                    <!-- Business Websites -->
-                    <div class="category category-business" id="business">
-                        <i class="fas fa-briefcase category-icon"></i>
-                        <h3>Business Websites</h3>
-                        <p>Professional websites that build trust, generate leads, and grow your business with clean
-                            design and strategic conversion elements.</p>
+            --gray-light: #f3f4f6;
 
-                        <div style="margin: 25px 0;">
-                            <h4>Perfect For:</h4>
-                            <ul class="features-list">
-                                <li>Startups & Small Businesses</li>
-                                <li>Service Professionals</li>
-                                <li>Local Businesses</li>
-                                <li>Portfolio Websites</li>
-                                <li>E-commerce Stores</li>
-                            </ul>
-                        </div>
+            --white: #ffffff;
 
-                        <div style="margin: 25px 0;">
-                            <h4>What's Included:</h4>
-                            <ul class="features-list">
-                                <li>Mobile-first responsive design</li>
-                                <li>SEO-friendly structure</li>
-                                <li>Contact & lead forms</li>
-                                <li>Fast loading optimization</li>
-                                <li>Social media integration</li>
-                                <li>Google Analytics setup</li>
-                            </ul>
-                        </div>
+            --green-wa: #25d366;
 
-                        <div class="hero-cta" style="margin-top: 30px;">
-                            <a href="portfolio.html#business" class="btn btn-primary">
-                                <i class="fas fa-eye"></i> View Examples
-                            </a>
-                            <a href="pricing.html" class="btn btn-outline">
-                                <i class="fas fa-tag"></i> View Pricing
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            --gradient-hero: linear-gradient(135deg, #fff5fb 0%, #f0f4ff 50%, #fff8f0 100%);
 
-        <!-- Additional Services -->
-        <section class="section" style="background: linear-gradient(135deg, #f5f7ff 0%, #f0f2ff 100%);">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Additional Services</h2>
-                    <p>Beyond website creation, we offer services to keep your online presence fresh and effective.</p>
-                </div>
+            --shadow: 0 4px 24px rgba(0,0,0,0.08);
 
-                <div class="cards-grid">
-                    <div class="card" id="maintenance">
-                        <div class="card-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3>Website Maintenance</h3>
-                        <p>Keep your website running smoothly with our monthly maintenance plans. We handle updates,
-                            backups, security, and minor content changes.</p>
-                        <ul class="features-list" style="margin-top: 15px;">
-                            <li>Regular security updates</li>
-                            <li>Content updates</li>
-                            <li>Performance optimization</li>
-                            <li>Backup management</li>
-                            <li>Technical support</li>
-                        </ul>
-                        <a href="contact.html?service=maintenance" class="btn btn-small" style="margin-top: 20px;">
-                            <i class="fas fa-info-circle"></i> Learn More
-                        </a>
-                    </div>
+            --shadow-hover: 0 12px 40px rgba(0,0,0,0.15);
 
-                    <div class="card" id="custom">
-                        <div class="card-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Custom Solutions</h3>
-                        <p>Need something unique? We build custom web applications, integrations, and functionality
-                            tailored to your specific requirements.</p>
-                        <ul class="features-list" style="margin-top: 15px;">
-                            <li>Custom web applications</li>
-                            <li>API integrations</li>
-                            <li>Database solutions</li>
-                            <li>Advanced functionality</li>
-                            <li>Unique interactive features</li>
-                        </ul>
-                        <a href="contact.html?service=custom" class="btn btn-small" style="margin-top: 20px;">
-                            <i class="fas fa-info-circle"></i> Discuss Project
-                        </a>
-                    </div>
+            --radius: 16px;
 
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fas fa-sync-alt"></i>
-                        </div>
-                        <h3>Website Redesign</h3>
-                        <p>Breathe new life into your existing website. We'll modernize the design, improve performance,
-                            and update content while preserving your brand essence.</p>
-                        <ul class="features-list" style="margin-top: 15px;">
-                            <li>Modern design update</li>
-                            <li>Mobile optimization</li>
-                            <li>Content reorganization</li>
-                            <li>Performance improvement</li>
-                            <li>SEO enhancement</li>
-                        </ul>
-                        <a href="contact.html?service=redesign" class="btn btn-small" style="margin-top: 20px;">
-                            <i class="fas fa-info-circle"></i> Get Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        }
 
-        <!-- Process -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Our Working Process</h2>
-                    <p>Simple, transparent, and designed for your comfort.</p>
-                </div>
 
-                <div class="cards-grid">
-                    <div class="card">
-                        <div class="card-icon">
-                            <span>1</span>
-                        </div>
-                        <h3>Discovery Call</h3>
-                        <p>We start with a WhatsApp conversation to understand your needs, emotions, and vision for the
-                            project.</p>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-icon">
-                            <span>2</span>
-                        </div>
-                        <h3>Design & Approval</h3>
-                        <p>We create initial designs and share them for your feedback. We iterate until you're
-                            completely satisfied.</p>
-                    </div>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-                    <div class="card">
-                        <div class="card-icon">
-                            <span>3</span>
-                        </div>
-                        <h3>Development</h3>
-                        <p>Our team builds your website with clean code, keeping you updated throughout the process.</p>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-icon">
-                            <span>4</span>
-                        </div>
-                        <h3>Launch & Support</h3>
-                        <p>We launch your website and provide guidance on managing it, plus ongoing support options.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- CTA -->
-        <section class="section">
-            <div class="container">
-                <div class="text-center">
-                    <h2>Not Sure Which Service You Need?</h2>
-                    <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem;">
-                        Let's have a quick WhatsApp chat. We'll help you choose the right service for your needs and
-                        budget.
-                    </p>
-                    <a href="#" class="btn btn-whatsapp" style="padding: 16px 40px; font-size: 1.1rem;">
-                        <i class="fab fa-whatsapp"></i> Get Free Consultation
-                    </a>
-                    <p style="margin-top: 20px; color: var(--gray-medium);">
-                        <i class="fas fa-phone"></i> Call: <a href="tel:+917723832790"
-                            style="color: var(--blue-primary);">+91 7723832790</a> |
-                        <i class="fas fa-envelope"></i> Email: <a href="mailto:masumsingh750@gmail.com"
-                            style="color: var(--blue-primary);">masumsingh750@gmail.com</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
+        body {
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fas fa-heart logo-icon"></i>
-                        <span>SeezuHeartPixel</span>
-                    </div>
-                    <p class="footer-tagline">
-                        Emotion + Technology. Creating websites that feel human, memorable, and professional.
-                    </p>
-                    <div style="display: flex; gap: 15px;">
-                        <a href="tel:+917723832790" class="btn btn-outline btn-small"
-                            style="color: white; border-color: rgba(255,255,255,0.3);">
-                            <i class="fas fa-phone"></i> Call
-                        </a>
-                        <a href="#" class="btn btn-whatsapp btn-small">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                    </div>
-                </div>
+            font-family: 'Poppins', sans-serif;
 
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-heart"></i> Our Story</a></li>
-                        <li><a href="services.html"><i class="fas fa-code"></i> Services</a></li>
-                        <li><a href="pricing.html"><i class="fas fa-tag"></i> Pricing</a></li>
-                        <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                    </ul>
-                </div>
+            background: var(--white);
 
-                <div class="footer-services">
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="special/birthday.html"><i class="fas fa-birthday-cake"></i> Birthday Websites</a>
-                        </li>
-                        <li><a href="special/anniversary.html"><i class="fas fa-ring"></i> Anniversary Websites</a></li>
-                        <li><a href="special/surprise.html"><i class="fas fa-gift"></i> Surprise Websites</a></li>
-                        <li><a href="services.html#business"><i class="fas fa-briefcase"></i> Business Websites</a></li>
-                        <li><a href="services.html#maintenance"><i class="fas fa-tools"></i> Website Maintenance</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            color: var(--dark);
 
-            <div class="footer-bottom">
-                <div>
-                    &copy; <span id="current-year">2023</span> SeezuHeartPixel. All rights reserved.
-                </div>
-                <div class="footer-bottom-links">
-                    <a href="terms.html">Terms of Service</a>
-                    <a href="privacy.html">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+            overflow-x: hidden;
 
-    <script src="js/script.js"></script>
-</body>
+        }
 
-</html>
+
+
+        /* ===== HEADER ===== */
+
+        header {
+
+            background: rgba(255,255,255,0.95);
+
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(233,30,140,0.1);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 999;
+
+            padding: 0 20px;
+
+        }
+
+
+
+        .nav-container {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            height: 70px;
+
+        }
+
+
+
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+
+        .logo-icon {
+
+            width: 44px; height: 44px;
+
+            background: var(--dark);
+
+            border-radius: 50%;
+
+            display: flex; align-items: center; justify-content: center;
+
+            color: var(--pink);
+
+            font-size: 20px;
+
+        }
+
+        .logo-text { font-size: 1.2rem; font-weight: 700; color: var(--dark); }
+
+        .logo-tagline { font-size: 0.65rem; color: var(--gray); }
+
+
+
+        .nav-links { display: flex; gap: 8px; }
+
+        .nav-links a {
+
+            text-decoration: none;
+
+            color: var(--dark);
+
+            font-size: 0.9rem;
+
+            font-weight: 500;
+
+            padding: 6px 14px;
+
+            border-radius: 8px;
+
+            transition: all 0.2s;
+
+        }
+
+        .nav-links a:hover, .nav-links a.active { color: var(--pink); }
+
+        .nav-links a.active { border-bottom: 2px solid var(--pink); }
+
+
+
+        .btn-whatsapp {
+
+            background: var(--green-wa);
+
+            color: white;
+
+            padding: 10px 20px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-size: 0.88rem;
+
+            font-weight: 600;
+
+            display: flex; align-items: center; gap: 6px;
+
+            transition: all 0.2s;
+
+        }
+
+        .btn-whatsapp:hover { background: #1ebe5d; transform: translateY(-1px); }
+
+
+
+        /* ===== HERO ===== */
+
+        .services-hero {
+
+            background: var(--gradient-hero);
+
+            padding: 80px 20px 60px;
+
+            text-align: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        .services-hero::before {
+
+            content: '';
+
+            position: absolute; inset: 0;
+
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e91e8c' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+        }
+
+        .services-hero h1 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: clamp(2rem, 5vw, 3.2rem);
+
+            color: var(--dark);
+
+            margin-bottom: 16px;
+
+            position: relative;
+
+        }
+
+        .services-hero h1 span { color: var(--pink); }
+
+        .services-hero p {
+
+            color: var(--gray);
+
+            font-size: 1.1rem;
+
+            max-width: 600px;
+
+            margin: 0 auto;
+
+            position: relative;
+
+        }
+
+
+
+        /* ===== SECTION ===== */
+
+        .section { padding: 70px 20px; }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        .section-header { text-align: center; margin-bottom: 50px; }
+
+        .section-header h2 {
+
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+
+            font-weight: 700;
+
+            color: var(--dark);
+
+            margin-bottom: 10px;
+
+        }
+
+        .section-header h2 span { color: var(--pink); }
+
+        .underline-pink {
+
+            width: 60px; height: 4px;
+
+            background: linear-gradient(90deg, var(--pink), var(--blue));
+
+            border-radius: 2px;
+
+            margin: 12px auto 16px;
+
+        }
+
+        .section-header p { color: var(--gray); font-size: 1rem; max-width: 600px; margin: 0 auto; }
+
+
+
+        /* ===== SERVICE TABS ===== */
+
+        .main-tabs {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            justify-content: center;
+
+            margin-bottom: 40px;
+
+        }
+
+        .tab-btn {
+
+            padding: 10px 22px;
+
+            border: 2px solid #e5e7eb;
+
+            background: white;
+
+            border-radius: 30px;
+
+            font-family: 'Poppins', sans-serif;
+
+            font-size: 0.88rem;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: all 0.25s;
+
+            color: var(--gray);
+
+        }
+
+        .tab-btn:hover { border-color: var(--pink); color: var(--pink); }
+
+        .tab-btn.active {
+
+            background: linear-gradient(135deg, var(--pink), var(--pink-light));
+
+            border-color: transparent;
+
+            color: white;
+
+            box-shadow: 0 4px 15px rgba(233,30,140,0.3);
+
+        }
+
+
+
+        .tab-content { display: none; }
+
+        .tab-content.active { display: block; }
+
+
+
+        /* ===== WEBSITE DEV SECTION ===== */
+
+        .sub-tabs {
+
+            display: flex; gap: 10px;
+
+            margin-bottom: 30px;
+
+            flex-wrap: wrap;
+
+        }
+
+        .sub-tab-btn {
+
+            padding: 8px 18px;
+
+            border: 1.5px solid #e5e7eb;
+
+            background: white;
+
+            border-radius: 20px;
+
+            font-family: 'Poppins', sans-serif;
+
+            font-size: 0.82rem;
+
+            font-weight: 500;
+
+            cursor: pointer;
+
+            transition: all 0.2s;
+
+            color: var(--gray);
+
+        }
+
+        .sub-tab-btn.active, .sub-tab-btn:hover {
+
+            border-color: var(--blue);
+
+            color: var(--blue);
+
+            background: var(--blue-soft);
+
+        }
+
+        .sub-content { display: none; }
+
+        .sub-content.active { display: block; }
+
+
+
+        /* ===== CARDS GRID ===== */
+
+        .cards-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+            gap: 24px;
+
+        }
+
+        .cards-grid-2 { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+
+
+
+        .service-card {
+
+            background: white;
+
+            border-radius: var(--radius);
+
+            padding: 28px;
+
+            border: 1.5px solid #f0f0f0;
+
+            transition: all 0.3s;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        .service-card::before {
+
+            content: '';
+
+            position: absolute; top: 0; left: 0;
+
+            width: 4px; height: 100%;
+
+            background: linear-gradient(180deg, var(--pink), var(--blue));
+
+        }
+
+        .service-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: var(--shadow-hover);
+
+            border-color: var(--pink-light);
+
+        }
+
+        .card-emoji { font-size: 2.2rem; margin-bottom: 14px; display: block; }
+
+        .service-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--dark); }
+
+        .service-card p { font-size: 0.88rem; color: var(--gray); margin-bottom: 16px; line-height: 1.6; }
+
+
+
+        .features-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+
+        .tag {
+
+            font-size: 0.75rem;
+
+            padding: 4px 10px;
+
+            background: var(--gray-light);
+
+            border-radius: 20px;
+
+            color: var(--dark);
+
+            font-weight: 500;
+
+        }
+
+        .tag.pink { background: var(--pink-soft); color: var(--pink); }
+
+        .tag.blue { background: var(--blue-soft); color: var(--blue); }
+
+
+
+        .btn-order {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            background: linear-gradient(135deg, var(--green-wa), #1ebe5d);
+
+            color: white;
+
+            padding: 9px 18px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-size: 0.82rem;
+
+            font-weight: 600;
+
+            transition: all 0.2s;
+
+        }
+
+        .btn-order:hover { transform: translateY(-1px); box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+
+
+
+        /* ===== EMOTIONAL/WISHES GRID ===== */
+
+        .wishes-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+            gap: 20px;
+
+        }
+
+        .wish-card {
+
+            background: white;
+
+            border-radius: var(--radius);
+
+            padding: 24px;
+
+            border: 1.5px solid #f5e6f0;
+
+            transition: all 0.3s;
+
+            cursor: pointer;
+
+        }
+
+        .wish-card:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow: 0 8px 30px rgba(233,30,140,0.12);
+
+            border-color: var(--pink-light);
+
+        }
+
+        .wish-emoji { font-size: 2.5rem; margin-bottom: 12px; display: block; }
+
+        .wish-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+
+        .wish-card p { font-size: 0.82rem; color: var(--gray); line-height: 1.55; margin-bottom: 14px; }
+
+
+
+        .delivery-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+
+        .badge {
+
+            font-size: 0.7rem;
+
+            padding: 3px 9px;
+
+            border-radius: 20px;
+
+            font-weight: 600;
+
+        }
+
+        .badge-pass { background: #fef3c7; color: #92400e; }
+
+        .badge-qr { background: #dbeafe; color: #1d4ed8; }
+
+        .badge-inter { background: #d1fae5; color: #065f46; }
+
+
+
+        /* ===== COMING SOON ===== */
+
+        .coming-soon-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+            gap: 20px;
+
+        }
+
+        .cs-card {
+
+            background: linear-gradient(135deg, #f8f9ff, #fff5fb);
+
+            border-radius: var(--radius);
+
+            padding: 24px;
+
+            border: 1.5px dashed #d1d5db;
+
+            text-align: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        .cs-badge {
+
+            position: absolute; top: 14px; right: 14px;
+
+            background: linear-gradient(135deg, var(--pink), var(--blue));
+
+            color: white;
+
+            font-size: 0.65rem;
+
+            font-weight: 700;
+
+            padding: 3px 10px;
+
+            border-radius: 20px;
+
+        }
+
+        .cs-emoji { font-size: 2.2rem; margin-bottom: 12px; display: block; }
+
+        .cs-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+
+        .cs-card p { font-size: 0.8rem; color: var(--gray); line-height: 1.5; }
+
+
+
+        /* ===== AI ASSISTANT ===== */
+
+        .ai-assistant-btn {
+
+            position: fixed;
+
+            bottom: 90px; right: 24px;
+
+            width: 58px; height: 58px;
+
+            background: linear-gradient(135deg, var(--pink), var(--blue));
+
+            border-radius: 50%;
+
+            display: flex; align-items: center; justify-content: center;
+
+            color: white;
+
+            font-size: 1.4rem;
+
+            cursor: pointer;
+
+            box-shadow: 0 4px 20px rgba(233,30,140,0.4);
+
+            z-index: 998;
+
+            transition: all 0.3s;
+
+            border: none;
+
+        }
+
+        .ai-assistant-btn:hover { transform: scale(1.1); }
+
+        .ai-badge {
+
+            position: absolute; top: -4px; right: -4px;
+
+            background: var(--green-wa);
+
+            color: white; font-size: 0.5rem; font-weight: 700;
+
+            padding: 2px 5px; border-radius: 10px;
+
+        }
+
+
+
+        .ai-chat-panel {
+
+            position: fixed;
+
+            bottom: 160px; right: 24px;
+
+            width: 360px;
+
+            max-height: 520px;
+
+            background: white;
+
+            border-radius: 20px;
+
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+
+            z-index: 997;
+
+            display: none;
+
+            flex-direction: column;
+
+            overflow: hidden;
+
+            border: 1px solid #f0f0f0;
+
+        }
+
+        .ai-chat-panel.open { display: flex; }
+
+
+
+        .ai-chat-header {
+
+            background: linear-gradient(135deg, var(--dark), #2d2d4a);
+
+            padding: 18px 20px;
+
+            color: white;
+
+            display: flex; align-items: center; gap: 12px;
+
+        }
+
+        .ai-avatar {
+
+            width: 38px; height: 38px;
+
+            background: linear-gradient(135deg, var(--pink), var(--blue));
+
+            border-radius: 50%;
+
+            display: flex; align-items: center; justify-content: center;
+
+            font-size: 1.1rem;
+
+        }
+
+        .ai-chat-header h4 { font-size: 0.95rem; font-weight: 600; }
+
+        .ai-chat-header p { font-size: 0.72rem; opacity: 0.7; }
+
+        .ai-close {
+
+            margin-left: auto;
+
+            background: none; border: none; color: white;
+
+            font-size: 1.2rem; cursor: pointer; opacity: 0.7;
+
+        }
+
+        .ai-close:hover { opacity: 1; }
+
+
+
+        .ai-messages {
+
+            flex: 1;
+
+            padding: 16px;
+
+            overflow-y: auto;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 12px;
+
+            max-height: 320px;
+
+        }
+
+        .msg {
+
+            max-width: 85%;
+
+            padding: 10px 14px;
+
+            border-radius: 14px;
+
+            font-size: 0.83rem;
+
+            line-height: 1.5;
+
+        }
+
+        .msg.bot {
+
+            background: var(--gray-light);
+
+            color: var(--dark);
+
+            border-bottom-left-radius: 4px;
+
+            align-self: flex-start;
+
+        }
+
+        .msg.user {
+
+            background: linear-gradient(135deg, var(--pink), var(--pink-light));
+
+            color: white;
+
+            border-bottom-right-radius: 4px;
+
+            align-self: flex-end;
+
+        }
+
+        .msg.typing {
+
+            background: var(--gray-light);
+
+            align-self: flex-start;
+
+            padding: 14px;
+
+        }
+
+        .typing-dots { display: flex; gap: 4px; }
+
+        .typing-dots span {
+
+            width: 7px; height: 7px;
+
+            background: var(--gray);
+
+            border-radius: 50%;
+
+            animation: bounce 1.2s infinite;
+
+        }
+
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes bounce {
+
+            0%, 80%, 100% { transform: translateY(0); }
+
+            40% { transform: translateY(-8px); }
+
+        }
+
+
+
+        .quick-btns {
+
+            padding: 10px 16px;
+
+            display: flex; flex-wrap: wrap; gap: 6px;
+
+            border-top: 1px solid #f0f0f0;
+
+        }
+
+        .quick-btn {
+
+            font-size: 0.72rem;
+
+            padding: 5px 11px;
+
+            background: var(--pink-soft);
+
+            color: var(--pink);
+
+            border: 1px solid var(--pink-light);
+
+            border-radius: 20px;
+
+            cursor: pointer;
+
+            font-family: 'Poppins', sans-serif;
+
+            font-weight: 500;
+
+            transition: all 0.2s;
+
+        }
+
+        .quick-btn:hover { background: var(--pink); color: white; }
+
+
+
+        .ai-input-row {
+
+            padding: 12px 16px;
+
+            display: flex; gap: 8px;
+
+            border-top: 1px solid #f0f0f0;
+
+        }
+
+        .ai-input {
+
+            flex: 1;
+
+            padding: 9px 14px;
+
+            border: 1.5px solid #e5e7eb;
+
+            border-radius: 10px;
+
+            font-family: 'Poppins', sans-serif;
+
+            font-size: 0.83rem;
+
+            outline: none;
+
+            transition: border 0.2s;
+
+        }
+
+        .ai-input:focus { border-color: var(--pink); }
+
+        .ai-send {
+
+            background: linear-gradient(135deg, var(--pink), var(--pink-light));
+
+            color: white; border: none;
+
+            width: 38px; height: 38px;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            font-size: 1rem;
+
+            transition: all 0.2s;
+
+        }
+
+        .ai-send:hover { transform: scale(1.05); }
+
+
+
+        /* ===== WHATSAPP FLOAT ===== */
+
+        .wa-float {
+
+            position: fixed;
+
+            bottom: 24px; right: 24px;
+
+            width: 58px; height: 58px;
+
+            background: var(--green-wa);
+
+            border-radius: 50%;
+
+            display: flex; align-items: center; justify-content: center;
+
+            color: white; font-size: 1.6rem;
+
+            text-decoration: none;
+
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+
+            z-index: 999;
+
+            transition: all 0.3s;
+
+        }
+
+        .wa-float:hover { transform: scale(1.1); background: #1ebe5d; }
+
+
+
+        /* ===== PROCESS STEPS ===== */
+
+        .process-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+            gap: 24px;
+
+        }
+
+        .process-card {
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            background: white;
+
+            border-radius: var(--radius);
+
+            border: 1.5px solid #f0f0f0;
+
+            transition: all 0.3s;
+
+        }
+
+        .process-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+
+        .step-num {
+
+            width: 50px; height: 50px;
+
+            background: linear-gradient(135deg, var(--pink), var(--blue));
+
+            color: white; font-size: 1.2rem; font-weight: 800;
+
+            border-radius: 50%;
+
+            display: flex; align-items: center; justify-content: center;
+
+            margin: 0 auto 16px;
+
+        }
+
+        .process-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+
+        .process-card p { font-size: 0.85rem; color: var(--gray); line-height: 1.55; }
+
+
+
+        /* ===== CTA ===== */
+
+        .cta-section {
+
+            background: linear-gradient(135deg, var(--dark), #1e3a5f);
+
+            padding: 70px 20px;
+
+            text-align: center;
+
+            color: white;
+
+        }
+
+        .cta-section h2 { font-size: 2rem; margin-bottom: 14px; }
+
+        .cta-section p { color: rgba(255,255,255,0.75); font-size: 1rem; margin-bottom: 30px; }
+
+        .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+        .btn-outline-white {
+
+            padding: 12px 28px;
+
+            border: 2px solid rgba(255,255,255,0.4);
+
+            color: white;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            font-size: 0.92rem;
+
+            transition: all 0.2s;
+
+     
